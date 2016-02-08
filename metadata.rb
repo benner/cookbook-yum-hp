@@ -7,4 +7,4 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 depends 'yum', '~> 3.2'
 supports 'centos'
 
-version '0.0.1'
+version '0.0.2'
