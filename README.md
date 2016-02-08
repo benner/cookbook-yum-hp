@@ -19,7 +19,7 @@ default['yum-hp']['repositories'] = %w{hp-spp}
 ``` ruby
 default['yum']['hp-spp']['repositoryid'] = 'hp-spp'
 default['yum']['hp-spp']['description'] = 'HP Service Pack Packages for Enterprise Linux 7 - $basearch'
-default['yum']['hp-spp']['baseurl'] = 'http://downloads.linux.hp.com/repo/spp/rhel/7/$basearch/current'
+default['yum']['hp-spp']['baseurl'] = 'http://downloads.linux.hpe.com/repo/spp/rhel/7/$basearch/current'
 default['yum']['hp-spp']['gpgkey'] = 'http://downloads.linux.hpe.com/SDR/hpPublicKey2048_key1.pub'
 default['yum']['hp-spp']['gpgcheck'] = true
 default['yum']['hp-spp']['enabled'] = true
@@ -34,7 +34,7 @@ Recipes
 
 ```ruby
   yum_repository 'hp' do
-    baseurl http://downloads.linux.hp.com/repo/spp/rhel/7/$basearch/current'
+    baseurl http://downloads.linux.hpe.com/repo/spp/rhel/7/$basearch/current'
     description 'HP Service Pack Packages for Enterprise Linux 7 - $basearch'
     enabled true
     gpgcheck true

@@ -5,10 +5,10 @@ default['yum']['hp-spp']['gpgkey'] = 'http://downloads.linux.hpe.com/SDR/hpPubli
 case node['platform_version'].to_i
 when 6
   default['yum']['hp-spp']['description'] = 'HP Service Pack Packages for Enterprise Linux 6 - $basearch'
-  default['yum']['hp-spp']['baseurl'] = 'http://downloads.linux.hp.com/repo/spp/rhel/6/$basearch/current'
+  default['yum']['hp-spp']['baseurl'] = 'http://downloads.linux.hpe.com/repo/spp/rhel/6/$basearch/current'
 when 7
   default['yum']['hp-spp']['description'] = 'HP Service Pack Packages for Enterprise Linux 7 - $basearch'
-  default['yum']['hp-spp']['baseurl'] = 'http://downloads.linux.hp.com/repo/spp/rhel/7/$basearch/current'
+  default['yum']['hp-spp']['baseurl'] = 'http://downloads.linux.hpe.com/repo/spp/rhel/7/$basearch/current'
 end
 
 default['yum']['hp-spp']['gpgcheck'] = true
