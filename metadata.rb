@@ -9,4 +9,4 @@ chef_version '>= 12.14'
 
 supports 'centos'
 
-version '0.0.3'
+version '0.0.4'
