@@ -1,6 +1,11 @@
 default['yum']['hp-spp']['repositoryid'] = 'hp-spp'
 
-default['yum']['hp-spp']['gpgkey'] = 'http://downloads.linux.hpe.com/SDR/hpePublicKey2048_key1.pub'
+default['yum']['hp-spp']['gpgkey'] = [
+  'https://downloads.linux.hpe.com/SDR/hpPublicKey1024.pub',
+  'https://downloads.linux.hpe.com/SDR/hpPublicKey2048.pub',
+  'https://downloads.linux.hpe.com/SDR/hpPublicKey2048_key1.pub',
+  'https://downloads.linux.hpe.com/SDR/hpePublicKey2048_key1.pub'
+]
 
 case node['platform_version'].to_i
 when 6

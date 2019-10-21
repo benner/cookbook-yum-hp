@@ -5,8 +5,7 @@ The yum-hp cookbook install HP SPP YUM repo
 
 Requirements
 ------------
-* Chef 12 or higher
-* yum cookbook version 3.2.0 or higher
+* Chef 12.14 or higher
 
 Attributes
 ----------
